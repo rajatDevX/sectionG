@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css style sheet</title>
+    <style>
+        /* universal selector */
+        *{
+            font-family:'Times New Roman', Times, serif
+        }
+        /* element selector */
+       article{
+        color:green;
+        background-color: bisque;
+       }
+       /* class selector */
+       .external{
+        color:blue;
+       }
+       /* Id selector */
+       #first{
+        color:red;
+       }
+       /* descendant selector */
+       div p{
+        color:chartreuse;
+       }
+       div.second > p{
+        color:crimson
+       }
+       h6~p{
+        color:darkolivegreen;
+       }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="color:blue;background-color: aqua;">this is a heading tag</h1>
+    <p style="color:red;background-color: rgb(221, 208, 208);">this is a paragraph tag</p>
+    <article>this is an article</article>
+    <br>
+    <br>
+    <div class="external">
+        this is external css
+    </div>
+    <div id="first">
+        this is a div tag with ID first
+    </div>
+    <div>
+        <p>this is a paragraph inside div element</p>
+    </div>
+    <div class="second">
+        <p>this is direct descendant of div element</p>
+        <div>
+            <p>this is nested parapgraph inside div</p>
+        </div>
+    </div>
+    <h6>this is a h6 heading</h6>
+    <p>this is a sibling of h6 heading element</p>
+    <p>this is second sibling of h6 heading element</p>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <style>
+        :root{
+            --ink:#1c1c1c;
+            --bg:#fafafa;
+            --line:#e3e3e3;
+            --accent:#3a5a40;
+        }
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            margin:0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:var(--ink);
+            background-color: var(--bg);
+            line-height:1.6;
+        }
+        header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            background: var(--ink);
+            color:#fff;
+            padding:24px 40px;
+            flex-wrap:wrap;
+        }
+        header h1{
+            margin:0;
+            font-size:1.6rem;
+        }
+        header p{
+            font-size:0.9rem;
+            color:#ccc;
+            margin:0px;
+        }
+        nav a{
+            color:#fff;
+            text-decoration:none;
+            margin-right:20px;
+            padding:5px 10px;
+        }
+        nav a:hover{
+            background: var(--accent);
+        }
+        main{
+            max-width:900px;
+            margin:0 auto;
+            padding:30px 20px;
+        }
+        h2{
+            color:var(--accent);
+            border-bottom:1px solid var(--accent);
+            padding-bottom:5px;
+            display:inline-block;
+        }
+        figure{
+            margin:20px 0px;
+            text-align:center;
+        }
+        figure img{
+            border-radius:50%;
+            border:5px solid var(--accent);
+            height:150px;
+            width:150px;
+            object-fit:contain;
+        }
+        figcaption{
+            font-style:italic;
+            color:#666;
+        }
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin:15px;
+        }
+        th,td{
+            text-align:center;
+            padding:10px;
+            border:1px solid var(--line);
+        }
+        thead{
+            background: var(--accent);
+            color:#fff;
+        }
+        footer{
+            text-align:center;
+            background: var(--ink);
+            color:#fff;
+            padding:20px;
+        }
+        ul.skills{
+            list-style:none;
+            display:flex;
+            gap:10px;
+            flex-wrap:wrap;
+        }
+        ul.skills li{
+            background: #e9f2ea;
+            border-radius:50%;
+            padding:5px;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Rajat Jain</h1>
+            <p>Frontend Developer</p>
+        </div>
+        <nav>
+            <a href="#about">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <figure>
+                <img src="pic1.png" alt="profile pic">
+                <figcaption>"I am a pro Developer"</figcaption>
+            </figure>
+
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>javaScript</li>
+                <li>React</li>
+            </ul>
+
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <article>
+                <h3>college event website</h3>
+                <p>A registration site bild with html and css</p>
+            </article>
+             <article>
+                <h3>Restaurant website</h3>
+                <p>restraunt website for menu and reservation</p>
+             </article>
+
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <p>B.Tech CSE in progress</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>9-10</th>
+                        <th>10-11</th>
+                        <th>11-1</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>html</td>
+                        <td>css</td>
+                        <td rowspan="2">web development lab</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td colspan="2">javaScript</td>
+                    </tr>
+                    <tr>
+                        <td>wednesday</td>
+                        <td>OS</td>
+                        <td>DBMS</td>
+                        <td>computer networks</td>
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+
+
+        </section>
+    </main>
+    <footer id="contact">
+        &copy;2026 Rajat Jain. All rights reserved
+
+    </footer>
+    
+</body>
+</html>

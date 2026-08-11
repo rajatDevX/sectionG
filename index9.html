@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+       .container{
+        border:1px solid black;
+        position:relative;
+        top:50px;
+        height:2000px;
+        
+       }
+       img{
+        height:300px;
+        width:300px;
+       }
+       .first{
+        position:static;
+        top:20px;
+        left:20px;
+       }
+       .second{
+        position:relative;
+        top:20px;
+        left:20px;
+       }
+       .third{
+        position:absolute;
+        top:100px;
+        left:100px;
+       }
+       .fourth{
+        position:fixed;
+        top:100px;
+        left:100px;
+       }
+       .container2{
+        height:2000px;
+        border:2px solid red;
+       }
+       .fifth{
+        position:sticky;
+        top:100px;
+        left:100px;
+       }
+       
+    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="image.png" alt="first" class="first">
+        <img src="image1.png" alt="second" class="second">
+        <img src="image2.png" alt="third" class="third">
+        <img src="image3.png" alt="fourth" class="fourth">
+        <img src="image.png" alt="fifth"class="fifth">
+    </div>
+
+    <!-- position property-static relative absolute fixed sticky -->
+     <div class="container2">
+        this is content inside container 2
+     </div>
+</body>
+</html>

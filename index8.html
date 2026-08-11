@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+    <style>
+        .first{
+            display:block;
+            height:200px;
+            width:200px;
+            border:1px solid black;
+
+        }
+        .second{
+            display:inline;
+            border:1px solid black;
+            height:200px;
+            width:200px;
+
+        }
+        .third{
+            display:inline-block;
+            border:1px solid black;
+            height:200px;
+            width:200px;
+            display:inline-block;
+
+        }
+        .fourth{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+        this is content inside a block element
+    </div>
+    <div class="first">
+        this is content insdie a block element
+    </div>
+    <div class="second">
+        this is content inside a inline element
+    </div>
+    <div class="second">
+        this is content inside a inline element
+    </div>
+     <div class="third">
+        this is content inside a inline-block element
+    </div>
+    <div class="third">
+        this is content inside a inline-block element
+    </div>
+    <div class="fourth">
+        this is content inside display none block
+    </div>
+    <div class="fifth">
+        <p>this is first paragraph</p>
+        <p style="visibility:hidden">this is a pragraph </p>
+        <p>this is second paragraph</p>
+    </div>
+     <div class="sixth">
+        <p>this is first paragraph</p>
+        <p style="display:none">this is a pragraph </p>
+        <p>this is second paragraph</p>
+    </div>
+</body>
+</html>
