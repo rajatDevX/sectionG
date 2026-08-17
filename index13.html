@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Pulse News</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <style>
+        :root{
+            --ink:#111;
+            --accent:#b3122a;
+            --bg:#f4f4f4;
+            --line:#ddd;
+        }
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            margin:0;
+            line-height:1.6;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            color:var(--ink);
+            background-color: var(--bg);
+        }
+        header{
+            background-color:#fff;
+            text-align: center;
+            padding:8px;
+            border-bottom:3px solid var(--ink);
+        }
+        header h1{
+            font-size:2.2rem;
+            margin:0;
+        }
+        header p{
+            color:grey;
+            font-size:0.9rem;
+            font-style:italic;
+        }
+        nav{
+            background-color: var(--ink);
+            padding:5px;
+        }
+        nav ul{
+            list-style: none;
+            margin:0;
+            padding:0;
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+        }
+        nav a{
+            color:#fff;
+            text-decoration: none;
+            padding:10px;
+            display:block;
+            padding: 12px 18px;
+        }
+        nav a:hover{
+            background-color: var(--accent);
+        }
+      
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Daily Pulse</h1>
+      <p>Your trusted source for today`s news</p>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#breaking">Breaking</a></li>
+        <li><a href="#politics">Politics</a></li>
+        <li><a href="#technology">Technology</a></li>
+        <li><a href="#sports">Sports</a></li>
+        <li><a href="#entertainment">Entertainment</a></li>
+      </ul>
+    </nav>
+    <div class="layout">
+      <main>
+        <p class="breaking" id="breaking">
+            &#128308 BREAKING:Parliament passes new digital privacy bill
+        </p>
+        <section id="politics">
+            <h2 class="section-title">Politics</h2>
+            <article>
+                <figure>
+                    <img src="parliament.png" alt="parliament">
+                    <figcaption>Parliament in session</figcaption>
+                </figure>
+                <div class="content">
+                    <h3>New Privacy Bill Passed</h3>
+                    <p>The bill introduces stricter rules for data collection by private companies...</p>
+
+                </div>
+            </article>
+
+        </section>
+        <section id="technology">
+            <h2 class="section-title">Technology</h2>
+            <article>
+                <figure>
+                    <img src="conference.png" alt="conference">
+                    <figcaption>AI Summit 2026</figcaption>
+                </figure>
+                <div class="content">
+                    <h3>India Hosts Global AI Summit</h3>
+                    <p>Leading tech companies gathered to discuss the future of responsible AI...</p>
+                </div>
+            </article>
+
+        </section>
+       
+        <section id="sports">
+            <article>
+                 <h2 class="section-title">Sports</h2>
+            <figure>
+                <img src="cricket.png" alt="cricket">
+                <figcaption>India vs Australia</figcaption>
+            </figure>
+            <div class="content">
+                <h3>India Wins the Series 3-2</h3>
+                <p>A thrilling final match sealed the series in India's favour...</p>
+            </div>
+
+            </article>
+           
+
+        </section>
+        <section id="entertainment">
+            <h2 class="section-title">Entertainment</h2>
+            <figure>
+                <img src="movie.png" alt="movie">
+                <figcaption>Premiere night</figcaption>
+            </figure>
+            <div class="content">
+                <h3>Blockbuster Sets Opening Day Record</h3>
+                <p>The film collected record numbers on its opening weekend... </p>
+            </div>
+
+        </section>
+      </main>
+      <aside>
+        <h3>Trending</h3>
+        <ul>
+            <li>Stock markets hit record high</li>
+            <li>New metro line inaugurated</li>
+            <li>Monsoon forecast update</li>
+        </ul>
+        <h3>Popular</h3>
+        <ul>
+            <li>Top 10 startups of 2026</li>
+            <li>Cricket World Cup schedule</li>
+        </ul>
+        <h3>Recent posts</h3>
+        <ul>
+            <li>Budget session begins Monday</li>
+            <li>New smartphone launch this week</li>
+        </ul>
+      </aside>
+    </div>
+    <footer>&copy;2026 Daily Pulse News Network</footer>
+  </body>
+</html>

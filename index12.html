@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox properties</title>
+    <style>
+        body{
+            height:100vh;
+            width:100vw;
+        }
+        .container{
+            height: 1000px;
+            width:100%;
+            border:3px solid black;
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            gap:20px;
+            text-align:center;
+            /* flex-wrap:wrap; */
+           
+          
+
+        }
+        .first{ 
+            height:200px;
+            width:200px;
+            background-color: red;
+            flex-grow:2;
+            /* margin-right:20px; */
+            /* align-self:flex-end; */
+            flex-shrink:1;
+            flex-basis:200px;
+          
+           
+        }
+        .second{
+            height:200px;
+            width:200px;
+            background-color: green;
+            flex-grow:1;
+           
+            /* margin-right:20px; */
+        }
+        .third{
+            height:200px;
+            width:200px;
+            background-color: blue;
+            /* margin-right:20px; */
+            /* align-self:flex-end; */
+            flex-grow:1;
+        }
+        .fourth{
+            height:200px;
+            width:200px;
+            background-color: yellow;
+          
+        }   
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first">
+            first box
+        </div>
+        <div class="second">
+            second box
+        </div>
+        <div class="third">
+            third box
+        </div>
+        <div class="fourth">
+            fourth box
+        </div>
+    </div>
+    
+</body>
+</html>
