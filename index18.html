@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transition property</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: yellow;
+        border: 1px solid black;
+        transition:
+          background-color 2s,
+          border-radius 2s,
+          transform 3s;
+        overflow: scroll;
+      }
+      .box:hover {
+        background-color: blue;
+        border-radius: 50%;
+        transform: translateX(100px) translateY(100px) scale(1.4) rotate(90deg);
+      }
+      button {
+        margin-top: 5px;
+        padding: 12px 20px;
+        background-color: blue;
+        color:white;
+        /* border:none; */
+        transition: all 2s;
+        /* margin:auto; */
+      }
+      button:hover{
+        transform:scale(1.2);
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">yellow after transition blue</div>
+    <button>click me</button>
+    <!-- apply style in it to increase button size and change its color -->
+  </body>
+</html>

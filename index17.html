@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid autofill/autofit</title>
+    <style>
+        body{
+            /* height:100vh; */
+            width:100vw;
+        }
+        div{
+            border:1px solid black;
+            background-color: antiquewhite;
+        }
+        .box1{
+            width:100%;
+            display:grid;
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        }
+        .box2{
+            width:100%;
+            display:grid;
+            grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+        }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <div class="box">HTML</div>
+      <div class="box">CSS</div>
+      <div class="box">javaScript</div>
+    </div>
+    <div class="box2">
+      <div class="box">html</div>
+      <div class="box">css</div>
+      <div class="box">javaScript</div>
+    </div>
+  </body>
+</html>

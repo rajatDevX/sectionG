@@ -36,10 +36,11 @@
             color:grey;
             font-size:0.9rem;
             font-style:italic;
+            margin:2px 0 0 0
         }
         nav{
             background-color: var(--ink);
-            padding:5px;
+            padding:0px;
         }
         nav ul{
             list-style: none;
@@ -48,6 +49,7 @@
             display:flex;
             justify-content:center;
             flex-wrap:wrap;
+            gap:0;
         }
         nav a{
             color:#fff;
@@ -58,6 +60,13 @@
         }
         nav a:hover{
             background-color: var(--accent);
+        }
+        .layout{
+            display:grid;
+            grid-template-columns: 2.5fr 1fr;
+        }
+        main{
+            min-width: 0;
         }
       
 

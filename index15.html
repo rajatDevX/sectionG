@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .products {
+        display: grid;
+        grid-template-columns: repeat(autofit,minmax(150px,1fr));
+        width: 100px;
+        background-color: azure;
+        gap: 10px;
+      }
+      .card {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="products">
+      <div class="card">Laptop</div>
+      <div class="card">Phone</div>
+      <div class="card">Tablet</div>
+      <div class="card">Watch</div>
+    </div>
+  </body>
+</html>
