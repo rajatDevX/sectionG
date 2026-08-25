@@ -38,11 +38,24 @@
       }
       .hero {
         background:
-          linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          linear-gradient(rgba(212, 119, 37, 0.5), rgba(0, 0, 0, 0.5)),
           url(hero1.png) center/cover;
         color: #fff;
         text-align: center;
         padding: 90px 20px;
+      }
+      nav a {
+        text-decoration: none;
+        color: #f3d6ac;
+        margin-left: 18px;
+        font-size: 0.9rem;
+      }
+      nav a:hover {
+        color: var(--accent);
+      }
+      .hero h2 {
+        margin: 0;
+        font-size: 2.2rem;
       }
     </style>
   </head>
@@ -61,39 +74,88 @@
     <div class="hero">
       <h2>Authentic Flavours, Homely Taste</h2>
     </div>
-    <section id="special"></section>
-    <section id="menu"></section>
-    <section id="gallery"></section>
-    <section id="reviews"></section>
-    <section id="hours">
-      <table>
-        <thead>
-          <tr>
-            <th>Day</th>
-            <th>Lunch</th>
-            <th>Dinner</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Mon</td>
-            <td>12 - 3 PM</td>
-            <td>7 - 11 PM</td>
-          </tr>
-          <tr>
-            <td>Tue</td>
-            <td>12 - 3 PM</td>
-            <td>7 - 11 PM</td>
-          </tr>
-          <tr>
-            <td>Wed</td>
-            <td>Closed</td>
-            <td>7 - 11 PM</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <section id="contact"></section>
+    <main>
+      <section id="special">
+        <h2 class="section-title">Today's Special</h2>
+        <article>
+          <h3>Paneer Butter Masala Thali</h3>
+          <p>Served with butter naan, dal, rice, and a sweet of the day.</p>
+        </article>
+      </section>
+      <section id="menu">
+        <h2 class="section-title">Menu</h2>
+        <div class="menu-category">
+          <h3>Veg</h3>
+          <ul>
+            <li>
+              Panner
+              <ul>
+                <li>Paneer Tikka</li>
+                <li>Paneer Butter Masala</li>
+              </ul>
+            </li>
+            <li>
+              Dal
+              <ul>
+                <li>Dal Makhani</li>
+                <li>Dal Tadka</li>
+              </ul>
+            </li>
+            <li>
+              Rice
+              <ul>
+                <li>Jeera Rice</li>
+                <li>Veg Pulao</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-category">
+          <h3>Dessert</h3>
+          <ul>
+            <li>Icream
+              <ul>
+                <li>Vanilla</li>
+                <li>Kesar pista</li>
+              </ul>
+            </li>
+            <li>Gualbjamun</li>
+          </ul>
+        </div>
+
+      </section>
+      <section id="gallery"></section>
+      <section id="reviews"></section>
+      <section id="hours">
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Lunch</th>
+              <th>Dinner</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mon</td>
+              <td>12 - 3 PM</td>
+              <td>7 - 11 PM</td>
+            </tr>
+            <tr>
+              <td>Tue</td>
+              <td>12 - 3 PM</td>
+              <td>7 - 11 PM</td>
+            </tr>
+            <tr>
+              <td>Wed</td>
+              <td>Closed</td>
+              <td>7 - 11 PM</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="contact"></section>
+    </main>
     <footer>
       <p>123 MG Road, Agra | +91 98765 12345</p>
       <p>&copy; 2026 Spice Route Restaurant</p>
