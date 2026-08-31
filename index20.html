@@ -57,6 +57,62 @@
         margin: 0;
         font-size: 2.2rem;
       }
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 40px;
+      }
+      h2.section-title {
+        border-bottom: 2px solid var(--accent);
+        display: inline-block;
+        padding: 5px;
+      }
+      .menu-category > ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .menu-category li {
+        border-bottom: 1px dashed var(--line);
+        padding: 4px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        text-align: center;
+        padding: 10px;
+        border: 1px solid var(--line);
+      }
+      thead {
+        background-color: var(--accent);
+        color: white;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+      }
+      .gallery figure {
+        margin: 0;
+        /* object-fit:cover; */
+      }
+
+      .gallery img {
+        width: 100%;
+
+        border: 1px solid var(--line);
+        /* object-fit: cover; */
+        height:140px;
+        border-radius:6px;
+        /* object-fit:cover; */
+      }
+      .gallery figcaption {
+        text-align: center;
+        color: grey;
+      }
     </style>
   </head>
   <body>
@@ -113,7 +169,8 @@
         <div class="menu-category">
           <h3>Dessert</h3>
           <ul>
-            <li>Icream
+            <li>
+              Icream
               <ul>
                 <li>Vanilla</li>
                 <li>Kesar pista</li>
@@ -122,21 +179,20 @@
             <li>Gualbjamun</li>
           </ul>
         </div>
-
       </section>
       <section id="gallery">
         <h2 class="section-title">Gallery</h2>
         <div class="gallery">
           <figure>
-            <img src="paneertikka.png" alt="paneer">
+            <img src="paneertikka.png" alt="paneer" />
             <figcaption>Paneer Tikka</figcaption>
           </figure>
           <figure>
-            <img src="daalmakhani.png" alt="dal">
+            <img src="daalmakhani.png" alt="dal" />
             <figcaption>Dal Makhani</figcaption>
           </figure>
           <figure>
-            <img src="gulabjamun.png" alt="sweet">
+            <img src="gulabjamun.png" alt="sweet" />
             <figcaption>Gulabjamun</figcaption>
           </figure>
         </div>
@@ -154,12 +210,10 @@
             <p>★★★★☆</p>
             <p>Great ambience and quick service.</p>
           </article>
-          
-
         </div>
-
       </section>
       <section id="hours">
+        <h2 class="section-title">Opening hours</h2>
         <table>
           <thead>
             <tr>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Card effects</title>
+    <style>
+        .scene{
+            width:200px;
+            height:280px;
+            perspective:600px;
+        }
+        .card{
+            width:100%;
+            height:100%;
+            transform-style: preserve-3d;
+            /* transition:transform 3s; */
+            position:relative;
+            transition: transform 3s;
+        }
+        .scene:hover .card{
+            transform:rotateY(180deg);
+        }
+        .front,.back{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            height:100%;
+            width:100%;
+            position:absolute;
+            backface-visibility: hidden;
+        }
+        .front{
+            background-color: brown;
+        }
+        .back{
+            background-color: aliceblue;
+            transform:rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="scene">
+        <div class="card">
+            <div class="front">Front</div>
+            <div class="back">Back</div>
+        </div>
+    </div>
+</body>
+</html>

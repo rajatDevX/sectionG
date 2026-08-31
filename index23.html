@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+        }
+        .box{
+            height:400px;
+            width:400px;
+            /* background: linear-gradient(to top,yellow,red); */
+            /* background: radial-gradient(red,yellow,blue); */
+            background: conic-gradient(black 0deg 90deg,white 90deg 180deg,black 180deg 270deg,white 270deg 360deg);
+            border:2px solid black;
+            background-size: 100px 100px;
+            /* background-repeat: no-repeat; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

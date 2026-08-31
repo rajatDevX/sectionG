@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Card</title>
+    <style>
+        .container{
+            width:400px;
+            height:250px;
+            margin:100px auto;
+            perspective:600px;
+        }
+        .card{
+            width:400px;
+            height:250px;
+            /* background-color: bisque; */
+            position:relative
+        }
+        .gate{
+            height:100%;
+            width:50%;
+            position:absolute;
+            top:0;
+            transition:all 2s;
+            background:conic-gradient(blue 0deg 90deg,white 90deg 180deg,blue 180deg 270deg,white 270deg 360deg); ;
+            background-size: 50px 50px;
+            border:1px solid black;
+
+        }
+        .message{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            font-size:30px;
+            background-color: rgb(238, 238, 130);
+            width:100%;
+            height:100%;
+        }
+        .left{
+            left:0;
+            transform-origin:left;
+
+        }
+        .right{
+            right:0;
+            transform-origin:right;
+
+        }
+        .container:hover .left{
+            transform:rotateY(-180deg);
+
+        }
+        .container:hover .right{
+            transform:rotateY(180deg);
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="message">🎉🎉Happy Birthday🎉🎉</div>
+            <div class="gate left"></div>
+            <div class="gate right"></div>
+        </div>
+    </div>
+</body>
+</html>
