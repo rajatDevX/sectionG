@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body>
+    <h1 class="text-4xl text-blue-500 font-bold underline">
+      this is a heading
+    </h1>
+    <p class="bg-blue-900 text-white">this is a paragraph</p>
+    <p class="border border-red-500 m-8 p-4">this is second para</p>
+    <div class="bg-[#123456] p-4 text-white">custom color</div>
+
+    <div class="bg-blue-100 pt-4 text-blue-500">this is another div</div>
+
+    <div class="4xl font-thin m-4 text-center bg-green-100">
+      this is text inside div element
+    </div>
+
+    <div class="w-full bg-pink-900 text-center text-white">
+      div element with full width
+    </div>
+    <div class="w-1/2 bg-red-300 text-center">div element with half width</div>
+    <div class="w-100 h-100 bg-green-500 text-center mx-auto">
+      div element with some height and width
+    </div>
+    <div
+      class="uppercase leading-16 m-4 border bg-yellow-900 italic text-white text-center p-8"
+    >
+      div element with all upper case letters
+    </div>
+    <div class="block bg-red-800 w-50">this is a div element</div>
+
+    <div class="block border-b border-red-900 text-4xl w-full mx-auto">
+      Heading1
+    </div>
+
+    <!-- <div class="relative left-4 top-4">this is a position property
+        <div class="absolute top-4">this is a position with absolute property</div>
+    </div> -->
+
+    <!-- flexbox -->
+    <div class="flex justify-center items-center gap-4 h-screen">
+      <div class="bg-green-500 p-5 flex-1 text-center">one</div>
+      <div class="bg-red-500 p-5 flex-1 text-center">two</div>
+      <div class="bg-pink-500 p-5 flex-1 text-center">three</div>
+    </div>
+    <nav class="flex justify-between px-4 py-3 bg-gray-900 text-white">
+      <h1 class="text-xl bold-medium">My Heading</h1>
+      <div class="flex gap-6">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Responsive design -->
+    <div class="bg-blue-500 md:bg-red-900 lg:bg-green-500">
+      This is a responsive design
+    </div>
+
+    <!-- grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mt-2">
+      <div class="p-4 bg-blue-200 border">one</div>
+      <div class="p-4 bg-blue-200 border">two</div>
+      <div class="p-4 bg-blue-200 border">three</div>
+
+      <div class="p-4 bg-blue-200 border">four</div>
+      <div class="p-4 bg-blue-200 border">five</div>
+      <div class="p-4 bg-blue-200 border">six</div>
+    </div>
+
+    <button>Hover me</button>
+  </body>
+</html>
