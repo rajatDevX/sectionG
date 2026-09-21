@@ -41,3 +41,21 @@ let field1="branch";
 console.log(student2[field1]);
 
 console.log(student2.field1);
+
+
+// updating values of object
+student1.name="Anoop";
+console.log(student1);
+student1.age=24;
+console.log(student1);
+
+//adding new values
+student1.specialization="AI";
+
+console.log(student1);
+
+// deleting values of object
+
+delete student1.specialization;
+
+console.log(student1);
