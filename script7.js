@@ -59,3 +59,39 @@ console.log(student1);
 delete student1.specialization;
 
 console.log(student1);
+
+const student3={
+    name:"Ayush",
+    age:22,
+    address:{
+        street:"Khandari",
+        city:"Agra"
+    }
+};
+console.log(student3.address?.city);
+console.log(student3.marks);
+
+
+console.log(Object.hasOwn(student3,"age"));
+
+const student4={
+    name:"Sikha",
+    age:21,
+    isPassed:true,
+    subjects:["html","css","deep learning"],
+    address:{
+        city:`Mathura`
+    },
+    greet:function(){
+        console.log(`Hello world ${this.name} here`);
+    },
+    learn(){
+      console.log(`I am learning javaScript now a days`);
+    }
+}
+
+
+console.log(student4.subjects[0]);
+
+student4.greet();
+student4.learn();
