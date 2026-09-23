@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Toggle</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <style type="text/tailwindcss">
+        @custom-variant dark (&:where(.dark,.dark *));
+     </style>
+</head>
+<body class="min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white p-10">
+    <h1 class="text-3xl font-bold ">Hello Students !!!!</h1>
+    <p class="mt-4">Press the button to change the theme</p>
+    <button id="themeButton" type="button" class="bg-blue-700 text-white px-2 py-1 rounded mt-4">Switch to Dark Mode </button>
+    <script>
+        const button=document.getElementById("themeButton");
+        button.addEventListener("click",function(){
+            const isDark=document.documentElement.classList.toggle("dark");
+            button.textContent=isDark ?"switch to Light Mode":"switch to dark Mode";
+        })
+    </script>
+    
+</body>
+</html>
